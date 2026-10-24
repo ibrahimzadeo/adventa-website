@@ -1,8 +1,8 @@
 # Stage 1: Build the Astro site
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 WORKDIR /app
-COPY package.json package-lock.json* ./
-RUN npm ci
+COPY package.json ./
+RUN npm install
 COPY . .
 RUN npm run build
 
