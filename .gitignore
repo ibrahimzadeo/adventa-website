@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# Production
+dist
+
+# Generated files
+.astro
+
+# Misc
+.DS_Store
+*.log
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
